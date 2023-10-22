@@ -1,3 +1,21 @@
-img {
-    
+#izq{
+    background-color:brown;
+}
+#ctro{
+    background-color:burlywood;
+}
+#der{
+    background-color:cadetblue;
+}
+#navbar{
+    background-color: antiquewhite;
+}
+#combo_box_departamento{
+    background-color: aqua;
+}
+#cards{
+    background-color: aquamarine;
+}
+#carrussy{
+    background-color: blueviolet;
 }
