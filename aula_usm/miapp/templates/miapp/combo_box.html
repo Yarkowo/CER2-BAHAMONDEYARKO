@@ -1,0 +1,8 @@
+<form method="GET" action="">
+    <select class="form-select" aria-label="Departamento" name="Departamento" onchange="this.form.submit()">
+        <option value=Departamento {% if respuesta == Departamento %} selected {% endif %}>Departamento</option> 
+        {%for departamento in entidades%}
+        <option value={{departamento.nombre}} {% if respuesta == departamento.nombre %} selected {% endif %} >{{departamento.nombre}}</option>
+        {%endfor%}
+    </select>
+</form>

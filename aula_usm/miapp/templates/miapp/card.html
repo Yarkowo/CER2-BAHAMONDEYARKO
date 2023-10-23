@@ -1,0 +1,13 @@
+{% block card %}
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">{{comunicado.titulo}}</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary ">{{comunicado.entidad.nombre}}</h6>
+          <h6 class="card-subtitle mb-2 text-body-secondary ">{% if comunicado.tipo == "S" %} Suspensión de actividades {% elif comunicado.tipo == "C" %} Suspensión de clases {% elif comunicado.tipo == "T" %} Información {% endif %} </h6>
+          <h6 class="card-subtitle mb-2 text-body-secondary d-xxl-none">{{comunicado.fecha_publicacion}}</h6>
+          <h6 class="card-subtitle mb-2 text-body-secondary d-xxl-none">{{comunicado.publicado_por}}</h6>
+          <p class="card-text d-none d-lg-block">{{comunicado.detalle}}</p>
+          <p class="card-text d-none d-sm-block d-lg-none">{{comunicado.detalle_corto}}</p>
+        </div>
+      </div>
+{% endblock%}
