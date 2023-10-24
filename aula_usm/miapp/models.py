@@ -8,6 +8,9 @@ class Entidad(models.Model):
     id = models.BigAutoField(primary_key=True)
     nombre = models.CharField(max_length=50)
     logo = models.ImageField()
+    class Meta:
+        verbose_name = "Entidad"
+        verbose_name_plural = "Entidades"
     def __str__(self):
         return self.nombre
 
@@ -19,8 +22,8 @@ class Comunicado(models.Model):
 
     id = models.BigAutoField(primary_key=True)
     titulo = models.CharField(max_length=50)
-    detalle = models.TextField(max_length=120)
-    detalle_corto = models.TextField(max_length=60)
+    detalle = models.TextField(max_length=600)
+    detalle_corto = models.TextField(max_length=100)
     tipo = models.CharField(max_length=1, choices=TIPO_CHOICES)
     entidad = models.ForeignKey(Entidad, on_delete=models.CASCADE)
     visible = models.BooleanField(default=True)
