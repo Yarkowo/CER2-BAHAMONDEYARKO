@@ -1,0 +1,31 @@
+<div class="row ">
+  <div class="col-1"></div>
+  <div class="col-10">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-interval="4000">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active" id="primero">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Portal informativo {% if respuesta == "Departamento" or repuesta == None %} General {% else %} de {{respuesta}} {% endif %}</h5>
+            </div>
+          </div>
+        </div>
+        {%for comunicado in comunicados%}
+        <div class="carousel-item">
+          {% include 'miapp/card.html' %}
+        </div>
+        {% endfor %}
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon color-black" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon color-black" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="col-1"></div>
+</div>

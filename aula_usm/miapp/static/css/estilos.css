@@ -1,0 +1,83 @@
+div .container{
+    text-align: center;
+    align-items:center;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    margin-left: 0vw;
+    margin-right: 0vw;
+}
+
+h1{
+    font-size: 3vw;
+    
+}
+
+#izq{
+
+}
+#ctro{
+
+}
+#der{
+
+}
+
+#head, #head img{
+    color: #FFFF;
+    border: #ffff;
+    background-color: #005F73;
+    align-items:center;
+    max-height: 12vw;
+    text-align: center;
+    
+}
+
+#navbar{
+    
+    background-color: #f5cb5c;
+}
+#combo_box_departamento{
+    background-color: #E5E5E5;
+}
+#cards{
+    background-color: #E5E5E5;
+}
+#carrussy{
+    background-color: #E5E5E5;
+}
+#cont_contenido{
+    background-color: #E5E5E5;
+    
+}
+.form-select{
+    text-align: center;
+    
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+#cards{
+    text-align: center;
+    align-items:center;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    margin-left: 0vw;
+    margin-right: 0vw;
+    margin-left: 0vw;
+}
+.card{
+    margin:3vw;
+}
+.carousel-item#primero .card-title{
+    font-size: 3vw;
+}
+.carousel .card-title{
+    font-size: 1.8vw;
+}
+.carousel{
+    font-size: 1.5vw;
+}
+.carousel-item .card{
+    margin-right: 0vw;
+    width:70vw;
+    height: 20vw;
+}
